@@ -37,7 +37,7 @@ const Banner = () => {
                             fontWeight: "bold",
                         }}
                     >
-                        Crypto Hunter
+                        Crypto Tracker
                     </Typography>
                     <Typography
                         variant='subtitle2'

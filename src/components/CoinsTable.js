@@ -114,7 +114,7 @@ const CoinsTable = () => {
                                         handleSearch()
                                             .slice((page - 1) * 10, (page - 1) * 10 + 10)
                                             .map(row => {
-                                                const profit = row.price_change_percentage_24th > 0;
+                                                let profit = row.price_change_percentage_24h >= 0;
                                                 return (
                                                     <TableRow
                                                         onClick={() => Navigate(`/coins/${row.id}`)}
@@ -148,7 +148,7 @@ const CoinsTable = () => {
                                                         <TableCell
                                                             align="right"
                                                             style={{
-                                                                color: profit > 0 ? "rgb(14, 203, 129)" : "red",
+                                                                color: profit > 0 ? "rgb(14,203,129)" : "red",
                                                                 fontWeight: 500,
                                                             }}
                                                         >

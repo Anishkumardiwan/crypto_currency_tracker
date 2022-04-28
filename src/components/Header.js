@@ -33,7 +33,7 @@ const Header = () => {
                 <Container>
                     <Toolbar>
                         <Typography onClick={() => navigate("/")} className={classes.title} variant='h6'>
-                            Crypto Hunter
+                            Crypto Tracker
                         </Typography>
 
                         <Select variant='outlined' style={{
